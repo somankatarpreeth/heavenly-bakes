@@ -12,8 +12,6 @@ Simply double-click the index.html file to open it in your default browser.
 
 Alternative (Live Server): If using VS Code, right-click index.html and select "Open with Live Server".
 
-The application is live at: 👉 (https://heavlybake.netlify.app/)
-
 📡 Features & Functionality The project focuses on a complete e-commerce flow for a bakery business, from product discovery to order confirmation.
 
 Key Modules 🧾 Product Catalog & Selection
