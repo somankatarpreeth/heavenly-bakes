@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/* font-family: "Great Vibes", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+/* font-family: "Merienda", cursive; */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("./assects/background.jpg");
+    
+}
+nav{
+    height: 10vh;
+    display: flex;
+    padding: 0px 20px;
+    backdrop-filter: blur(10px);
+}
+
+#nav_one{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Great Vibes", cursive;
+    font-size: 30px;
+}
+
+#nav_two{
+    flex-basis: 80%;
+    display: flex;
+    justify-content: end;
+    padding-right: 100px;
+    align-items: center;
+    gap: 50px;
+}
+#nav_two>button{
+    height: 30px;
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    background-color:rgb(255, 81, 0);
+    transition: all 0.2s ease-in-out;
+}
+#nav_two button a{
+    text-decoration: none;
+    color: white;
+    font-family: "Merienda", cursive;
+}
+#nav_two>button:hover{
+    scale: 1.1;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+#login{
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 300px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+#login:hover{
+    scale: 1.1;
+}
+#login>label{
+    color: white;
+    font-family: "Merienda", cursive;
+}
+#username{
+    background-color: rgba(255, 255, 255, 0.447);
+    border: none;
+    border-radius: 5px;
+    width: 20em;
+}
+#password{
+    background-color: rgba(255, 255, 255, 0.447);
+    border: none;
+    border-radius: 5px;
+    width: 20em;
+}
+#btn-login{
+    border: none;
+    border-radius: 5px;
+    background-color:peru ;
+    color: black;
+    height: 30px;
+    width: 60px;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+#btn-login a{
+    text-decoration: none;
+    color: white;
+    font-family: "Merienda", cursive;
+}
+#btn-login:hover{
+    scale: 1.1;
+}
+#login>a{
+    text-decoration: none;
+    color: red;
+}
