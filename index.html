@@ -3,28 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="./loginstyles.css">
+    <title>Heavenly Bakers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 <body>
-    <nav>
+    <main id="home_page">
+        <nav>
             <aside id="nav_one">
-                <h4>Heavenly Bakers</h4>
+                <h4><a href="/mainpage/index.html">Heavenly Bakers</a></h4>
             </aside>
             <aside id="nav_two">
-               <button><a href="./signup/signup.html">SignUp</a></button>
+                <a href="/about/about.html">About</a>
+                <a href="/menu/menu.html">Menu</a>
+                <a href="/contact/contact.html">Contact</a>
             </aside>
-    </nav>
-    <header>
-        <div id="login">
-            <label for="username">Username :</label>
-            <input type="text" name="username" id="username" placeholder="Enter Username"><br><br>
-            <label for="password">Password :</label>
-            <input type="password" name="password" id="password" placeholder="Enter password"><br><br>
-            <button type="submit" id="btn-login"><a href="./mainpage/index.html">Login</a></button><br>
-            <a href="#">Forgot Password ?</a>
+            <aside id="nav_three">
+                <i class="ri-shopping-cart-2-line"></i>
+                <div id="cart_quantity">0</div>
+                <p id="cart_price">₹0.00</p>
+            </aside>
+        </nav>
+        <header></header>
+    </main>
+    <section id="discription">
+        <div id="info">
+            <h1>The Best Bakery In Town</h1>
+            <p>We provide freshly baked breads and pastries</p>
+            <button>Shop now</button>
+            <h2>Enjoy our Delicious Bread</h2>
         </div>
-    </header>
-    <script src="./login.js"></script>
+        <br>
+        <div id="food_items">
+            <img src="/assects/Chocolate-Almond-Croissants-Recipe.jpg" alt="Chocolate-Almond-Croissants">
+            <img src="/assects/french-toast-recipe.jpg" alt="french-toast">
+            <img src="/assects/GERMAN BLACK FOREST PASTRY.jpeg" alt="GERMAN BLACK FOREST PASTRY">
+            <img src="/assects/vegan-red-velvet-cupcakes-1.jpg" alt="vegan-red-velvet-cupcakes">
+        </div>
+        <div id="address">
+            <h1>Visit Our Bakery</h1>
+            <a href="https://www.google.com/maps/place/Heavenly+Bakery/@37.7885798,-124.9684328,5.73z/data=!4m10!1m2!2m1!1sHeavenly+Bakes+in+usa!3m6!1s0x8091f7d49bb371cf:0x69050ba2d701e9ce!8m2!3d36.8503002!4d-121.4019263!15sChVIZWF2ZW5seSBCYWtlcyBpbiB1c2FaFyIVaGVhdmVubHkgYmFrZXMgaW4gdXNhkgEGYmFrZXJ5qgFREAEqEiIOaGVhdmVubHkgYmFrZXMoADIeEAEiGl5hsUxno0Dks_NGYU6s884d4AAT7-sq5yy8MhkQAiIVaGVhdmVubHkgYmFrZXMgaW4gdXNh4AEA!16s%2Fg%2F1hc1b4zrm?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" id="locationimg">601 San Benito St, Hollister, CA 95023, United States</p></a>
+            <p>Open from 10:00am - 12:00pm</p>
+            <button><a href="/contact/contact.html">Contact Us</a></button>
+        </div>
+    </section>
+    <script src="./script.js"></script>
 </body>
 </html>

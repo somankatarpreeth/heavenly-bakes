@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: "Poppins", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/* font-family: "Great Vibes", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+/* font-family: "Merienda", cursive; */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+body{
+     overflow-x: hidden;
+}
+/* nav bar */
+nav{
+    height: 15vh;
+    display: flex;
+    padding: 0px 20px;
+    background-color: rgb(222, 184, 135);
+}
+
+#nav_one{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav_one>h4 a{
+    font-family: "Great Vibes", cursive;
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+#nav_two{
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#nav_two>a{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Great Vibes", cursive;
+    font-weight: 900;
+    color: black;
+}
+#nav_three{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#nav_three>i{
+    font-size: 25px;
+    cursor: pointer;
+}
+#nav_three>#cart_quantity{
+    display: flex;
+    background-color: rgb(235, 205, 165);
+    justify-content: center;
+    align-items: center;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    position: relative;
+    right: 25px;
+    bottom: 16px;
+}
+#cart_price{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Merienda", cursive;
+}
+#sidebar{
+    height: 100vh;
+    border: 1px solid black;
+    width: 450px;
+    position: absolute;
+    z-index: 100;
+    border-radius: 20px;
+    top: 0px;
+    right: -450px;
+    transition: all 1s 0s ease   ;
+    backdrop-filter: blur(15px);
+}
+#sidebar_one{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    font-family: "Merienda", cursive;
+    /* background-color: rgba(197, 238, 238, 0.752); */
+    border-radius: 20px;
+}
+#sidebar_one>p{
+    cursor: pointer;
+}
+/* Our Menu Heading*/
+#menu_filter{
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#menu_filter h1{
+    font-size: 35px;
+    font-family: "Merienda", cursive;
+}
+#filter_btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#filter_btns button{
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: "Merienda", cursive;
+    transition: all 0.2s ease-in-out;
+}
+#filter_btns button:hover{
+    scale: 1.1;
+}
+#filter_btns .active{
+    color: rgba(0, 0, 0, 0.738);
+    background-color: rgb(241, 189, 125);
+}
+
+/* Items */
+#menu_items{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 20px;
+}
+.card{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    width: 320px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 20px;
+  
+}
+.card_one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px;
+}
+.card_img img{
+    height: 180px;
+    width: 200px;
+    border-radius: 20px;
+}
+.card_info{
+    font-family: "Merienda", cursive;
+}
+.card_info h2{
+    font-size: 15px;
+}
+.card_info p{
+    font-size: 18px;
+    padding-left:20px;
+}
+.card_two{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.minus, .plus{
+    background-color: tan;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.card_quantity{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+.addToCart button{
+    height: 30px;
+    width: 120px;
+    border: none;
+    color: white;
+    background-color:rgba(188, 91, 47, 0.951);
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+    font-weight: 700;
+}
+.addToCart button:hover{
+    background-color:rgb(255, 42, 0);
+    color: white;
+}
+#sidebar_items{
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+#buyBtn{
+    background-color:rgba(188, 91, 47, 0.951);
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s 0s ease;
+    font-weight: 600;
+    font-family: "Merienda", cursive;
+}
+#buyBtn:hover{
+    background-color:rgb(255, 0, 0);
+}
+#cart_icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  position: relative;
+}
+
+#sidebar_items .removeBtn {
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  padding: 5px 12px;
+  margin-top: 8px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#sidebar_items .removeBtn:hover {
+  background-color: #c1121f; 
+  transform: scale(1.05);
+}
+
+#sidebar_items .items_info {
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: rgba(96, 244, 242, 0.551);
+}
+
+#sidebar_items .items_info h1 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#sidebar_items .items_info p {
+  font-size: 14px;
+  margin: 3px 0;
+}

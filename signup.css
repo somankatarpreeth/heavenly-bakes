@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: "Poppins", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/* font-family: "Great Vibes", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+/* font-family: "Merienda", cursive; */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+   height: 100vh; 
+   width: 100%;
+   overflow: hidden;
+}
+video{
+    height: 100%;
+    width: 100%;
+    background-position: absolute;
+    object-fit: cover;
+    z-index: 10;
+}
+nav{
+    height: 10vh;
+    display: flex;
+    padding: 0px 20px;
+    backdrop-filter: blur(10px);
+    position: relative;
+    bottom: 44em;
+}
+
+#nav_one{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Great Vibes", cursive;
+    font-size: 30px;
+}
+
+#nav_two{
+    flex-basis: 80%;
+    display: flex;
+    justify-content: end;
+    padding-right: 100px;
+    align-items: center;
+    gap: 50px;
+}
+#nav_two>button{
+    height: 30px;
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    background-color:rgb(255, 81, 0);
+    transition: all 0.2s ease-in-out;
+    font-family: "Merienda", cursive;
+}
+#nav_two>button a{
+    text-decoration: none;
+    color: white;
+
+}
+#nav_two>button:hover{
+    scale: 1.1;
+}
+#createaccountblock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 36em;
+    right: 25em;
+}
+#signupblock{
+    border: 2px solid black;
+    height: 350px;
+    width: 400px;
+    position: relative;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);    
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#signupblock h4{
+    color: white;
+    font-family: "Merienda", cursive;
+    font-size: 25px;
+}
+#signupblock label{
+    color: white;
+    font-family: "Merienda", cursive;
+    padding-right: 18em;
+}
+#signupblock input{
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.389);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding-left: 20px;
+}
+#signupblock input::placeholder{
+    color: white;
+}
+#signupblock button{
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: red;
+    font-family: "Merienda", cursive;
+    transition: all 0.2s ease-in-out;
+}
+#signupblock button:hover{
+    color: red;
+    background-color: white;
+    font-weight: 900;
+    scale: 1.1;
+}

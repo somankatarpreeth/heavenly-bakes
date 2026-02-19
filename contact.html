@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Page</title>
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <main id="home_page">
+        <nav>
+            <aside id="nav_one">
+                <h4><a href="/mainpage/index.html">Heavenly Bakers</a></h4>
+            </aside>
+            <aside id="nav_two">
+                <a href="/about/about.html">About</a>
+                <a href="/menu/menu.html">Menu</a>
+                <a href="./contact.html">Contact</a>
+            </aside>
+            <aside id="nav_three">
+                <i class="ri-shopping-cart-2-line"></i>
+                <div id="cart_quantity">0</div>
+                <p id="cart_price">₹0.00</p>
+            </aside>
+        </nav>
+        <header></header>
+    </main>
+    <section id="contact_page">
+        <aside id="contact_one">
+            <h1>Contact</h1>
+             <form action="https://api.web3forms.com/submit" method="POST" id="form">   <!-- web3Form -->
+                 <input type="hidden" name="access_key" value="e14729ef-6024-4846-8a6e-b6c376f9da49"> <!-- web3Form -->
+                <input type="text" name="name" placeholder="Name" class="inputs" required><br><br>
+                <input type="email" name="email" placeholder="Email" class="inputs" required><br><br>
+                <textarea rows="5" cols="60" name="message" placeholder="Message" required></textarea><br> <br>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;"> <!-- web3Form -->
+                <button type="submit" id="submit">Submit Form</button>
+                <div id="result"></div><!-- web3Form -->
+            </form>
+        </aside>
+        <aside id="contact_two">
+            <h1>Get In Touch</h1>
+            <div>
+                <p>📞 +91 040-5421652</p><br>
+                <p>📧 HeavenlyBakes@gmail.com</p><br>
+                <p><a href="https://www.google.com/maps/place/Heavenly+Bakery/@37.7885798,-124.9684328,5.73z/data=!4m10!1m2!2m1!1sHeavenly+Bakes+in+usa!3m6!1s0x8091f7d49bb371cf:0x69050ba2d701e9ce!8m2!3d36.8503002!4d-121.4019263!15sChVIZWF2ZW5seSBCYWtlcyBpbiB1c2FaFyIVaGVhdmVubHkgYmFrZXMgaW4gdXNhkgEGYmFrZXJ5qgFREAEqEiIOaGVhdmVubHkgYmFrZXMoADIeEAEiGl5hsUxno0Dks_NGYU6s884d4AAT7-sq5yy8MhkQAiIVaGVhdmVubHkgYmFrZXMgaW4gdXNh4AEA!16s%2Fg%2F1hc1b4zrm?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">📍601 San Benito St, Hollister, CA 95023, United States</a></p><br>
+            </div>
+            <img src="/assects/contactimg.jpg" alt="">
+        </aside>
+    </section>
+    <script src="./contact.html"></script>
+</body>
+</html>
